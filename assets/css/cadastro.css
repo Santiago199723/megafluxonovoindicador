@@ -1,0 +1,91 @@
+/* cadastro.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/cadastro.png'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.msg-error,
+.msg-success {
+  margin: 10px 0;
+  padding: 10px;
+  display: none;
+}
+
+.clientes-list {
+  margin-top: 20px;
+}
+
+.clientes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.clientes-table th,
+.clientes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.clientes-table th {
+  background-color: #f2f2f2;
+}
+
+.cliente-checkbox {
+  margin-right: 5px;
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: center; /* Centraliza os botões horizontalmente */
+}
+
+.action-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 10px; /* Adiciona margem para espaçamento entre os botões */
+}
+
+.action-button:hover {
+  background-color: #45a049;
+}
+
+.card h2 {
+  text-align: center; /* Centraliza o título horizontalmente */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
